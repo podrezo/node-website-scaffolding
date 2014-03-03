@@ -1,0 +1,17 @@
+{
+  "name": "scaffolding",
+  "version": "0.0.0",
+  "description": "basic scaffolding for a nodejs website",
+  "main": "index.js",
+  "dependencies": {
+    "express-dot": "~0.1.0",
+    "express": "~3.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
