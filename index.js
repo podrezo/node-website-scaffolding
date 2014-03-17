@@ -11,10 +11,16 @@ app.configure(function(){
 	app.use('/css',express.static(__dirname+'/public/css'));
 	app.use('/img',express.static(__dirname+'/public/img'));
 	app.use('/js',express.static(__dirname+'/public/js'));
+	app.use('/fonts',express.static(__dirname+'/public/fonts'));
 });
 
 app.get('/', function(req, res){
 	var templateData = {title: "This title is from the template data JSON object"};
+	res.render('index.html', templateData);
+});
+
+app.get('/nolayout', function(req, res){
+	var templateData = {title: "This title is from the template data JSON object",layout:false};
 	res.render('index.html', templateData);
 });
 
